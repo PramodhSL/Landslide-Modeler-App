@@ -1,0 +1,30 @@
+# Landslide Modeler App - Required Python Packages (pinned versions recommended)
+# Install with: pip install -r requirements.txt
+
+# Core data processing
+pandas==2.1.4
+numpy==1.26.5
+
+# Machine learning
+scikit-learn==1.3.2
+xgboost==2.1.1
+scikit-optimize==0.9.0
+
+# Geospatial processing
+rasterio==1.3.10
+
+# Visualization
+matplotlib==3.8.1
+seaborn==0.12.2
+
+# Optional / utilities
+joblib==1.3.2
+tqdm==4.66.1
+
+# Optional (enhanced analysis features)
+imbalanced-learn==0.10.1
+shap==0.42.0
+
+# Testing & docs
+pytest==8.4.4
+sphinx==7.3.1
