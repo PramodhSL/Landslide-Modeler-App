@@ -8,17 +8,20 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
+*   Git must be installed on your system.
 *   Python 3.x must be installed on your system.
 *   You will need to install the Python libraries listed in the `requirements.txt` file.
 
 ### Installation
 
-1.  **Clone the repository or download the source code.**
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/PramodhSL/Landslide-Modeler-App.git
+    ```
 
 2.  **Navigate to the project directory:**
-
     ```bash
-    cd path/to/App_PythonGUI
+    cd Landslide-Modeler-App
     ```
 
 3.  **Install the required Python packages:**
@@ -51,19 +54,24 @@ This will launch the graphical user interface (GUI) of the Landslide Susceptibil
 
 ## How to Use the Application
 
-1.  **File Selection:**
+1.  **Data Preparation:**
+    *   This repository does not include the data files. You will need to provide your own data.
+    *   Place your landslide inventory data in a CSV file inside the `input_data` folder.
+    *   Place your raster data (e.g., elevation, slope, aspect) in the `input_rasters` folder.
+
+2.  **File Selection:**
     *   **Input CSV:** Select the input CSV file containing your landslide inventory data.
-    *   **Raster Folder:** Select the folder containing your raster data (e.g., elevation, slope, aspect).
+    *   **Raster Folder:** Select the folder containing your raster data.
     *   **Output Folder:** Select the folder where the analysis results will be saved.
 
-2.  **Configuration:**
+3.  **Configuration:**
     *   **Model:** Choose the machine learning model you want to use (e.g., Random Forest, XGBoost).
     *   **Balance Strategy:** Select a strategy to handle imbalanced data (e.g., SMOTE).
     *   **Parallel Workers:** Set the number of CPU cores to use for parallel processing.
 
-3.  **Run Analysis:**
+4.  **Run Analysis:**
     *   **Compare Models:** Click this button to run a comparison of all available models. The results will be displayed in the log, and the best-performing models will be available in the "Model" dropdown.
     *   **Run Analysis:** After comparing models, select a model from the dropdown and click this button to run the full analysis and generate the landslide susceptibility map.
 
-4.  **Log Output:**
+5.  **Log Output:**
     *   The log window will display the progress and results of the analysis.
